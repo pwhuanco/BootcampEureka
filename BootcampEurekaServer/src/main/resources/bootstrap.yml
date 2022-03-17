@@ -1,6 +1,14 @@
 spring:
   application:
     name: eureka-server
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8081/
+      username: develop
+      password: develop
+
 #server:
 #  port: 8082
 #
@@ -12,7 +20,3 @@ spring:
 #    fetchRegistry: false
 #    serviceUrl:
 #      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-  cloud:
-    uri: http://localhost:8081/
-    user: develop
-    password: develop
