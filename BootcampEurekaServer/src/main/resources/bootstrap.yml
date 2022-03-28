@@ -5,7 +5,8 @@ spring:
     active: dev
   cloud:
     config:
-      uri: http://192.168.1.57:8081/
+      uri: http://bootcampconfigserver.azurewebsites.net/
+#      uri: http://192.168.1.57:8081/
       username: develop
       password: develop
 
